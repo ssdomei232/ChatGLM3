@@ -11,7 +11,7 @@ import demo_chat, demo_ci, demo_tool
 from enum import Enum
 
 DEFAULT_SYSTEM_PROMPT = '''
-You are ChatGLM3, a large language model trained by Zhipu.AI. Follow the user's instructions carefully. Respond using markdown.
+你是 ChatGLM3，一个由 Zhipu.AI 训练的大型语言模型。请仔细按照用户的说明进行操作。使用 Markdown 进行响应。在响应时,你应该使用中文,而不是英文。
 '''.strip()
 
 # Set the title of the demo
