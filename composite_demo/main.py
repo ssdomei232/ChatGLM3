@@ -43,8 +43,8 @@ with st.sidebar:
 
     cols = st.columns(2)
     export_btn = cols[0]
-    clear_history = cols[1].button("Clear History", use_container_width=True)
-    retry = export_btn.button("Retry", use_container_width=True)
+    clear_history = cols[1].button("清除历史", use_container_width=True)
+    retry = export_btn.button("重试", use_container_width=True)
 
     system_prompt = st.text_area(
         label="System Prompt (Only for chat mode)",
