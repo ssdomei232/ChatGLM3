@@ -1,2 +1,4 @@
 [theme]
-font = "monospace"
+base="dark"
+primaryColor="#66ccff"
+backgroundColor="#39c5bb"
