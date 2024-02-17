@@ -29,16 +29,16 @@ class Mode(str, Enum):
 
 with st.sidebar:
     top_p = st.slider(
-        'top_p', 0.0, 1.0, 0.8, step=0.01
+        'top_p(生成文本多样性)', 0.0, 1.0, 0.8, step=0.01
     )
     temperature = st.slider(
-        'temperature', 0.0, 1.5, 0.95, step=0.01
+        'temperature(生成文本的随机性和多样性,过高可使模型发癫)', 0.0, 1.5, 0.95, step=0.01
     )
     repetition_penalty = st.slider(
-        'repetition_penalty', 0.0, 2.0, 1.1, step=0.01
+        'repetition_penalty(重复惩罚)', 0.0, 2.0, 1.1, step=0.01
     )
     max_new_token = st.slider(
-        'Output length', 5, 32000, 256, step=1
+        'Output length(生成的token的最大长度)', 5, 32000, 256, step=1
     )
 
     cols = st.columns(2)
@@ -47,7 +47,7 @@ with st.sidebar:
     retry = export_btn.button("重试", use_container_width=True)
 
     system_prompt = st.text_area(
-        label="System Prompt (Only for chat mode)",
+        label="系统提示 (仅限对话模式)",
         height=300,
         value=DEFAULT_SYSTEM_PROMPT,
     )
